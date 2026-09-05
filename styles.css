@@ -4,9 +4,9 @@
 }
 
 :root{
-    --font-body: sans-serif;
-    --font-h1: "sacramento-pro", sans-serif;
-    --font-heading: "sacramento-slim", sans-serif;
+    --font-body: "helvetica", sans-serif;
+    --font-h1: "tomarik-serif", serif;
+    --font-heading: "tomarik-introvert", sans-serif;
     --base-size: 1rem;
     --line-height: 1.5;
     --measure: 65ch;
@@ -14,18 +14,19 @@
     --size-h1: 3rem;
     --size-h2: 2rem;
     --size-h3: 1.8rem;
-    --padding-heading: 1rem 2rem;
+    --padding: 1rem 2rem;
 
     /* colors */
     --color-backdrop: #fff8dd;
-    --color-main: #91a4ff;
+    --color-main: #f8c36c;
     --color-accent: #ff879f;
     --color-text-light: #fffcf6;
     --color-text-dark: #161624;
-}
+} 
 
 body{
     background-color: var(--color-backdrop);
+    font-family: var(--font-body);
 }
 
 header{
@@ -37,10 +38,22 @@ h1{
     color: var(--color-dark);
     font-family: var(--font-h1);
     font-size: var(--size-h1);
-    padding: var(--padding-heading);
+    padding: var(--padding);
 }
 
 h2{
-    padding: var(--padding-heading);
+    padding: var(--padding);
     font-family: var(--font-heading);
+    font-size: var(--size-h2);
+}
+
+h3{
+    font-family: var(--font-heading);
+    font-size: var(--size-h3);
+    padding: var(--padding);
+}
+
+p{
+    padding: var(--padding);
+    padding-top: 0;
 }
