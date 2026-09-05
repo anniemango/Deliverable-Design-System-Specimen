@@ -1,8 +1,46 @@
 *{
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 :root{
+    --font-body: sans-serif;
+    --font-h1: "sacramento-pro", sans-serif;
+    --font-heading: "sacramento-slim", sans-serif;
     --base-size: 1rem;
+    --line-height: 1.5;
+    --measure: 65ch;
 
+    --size-h1: 3rem;
+    --size-h2: 2rem;
+    --size-h3: 1.8rem;
+    --padding-heading: 1rem 2rem;
+
+    /* colors */
+    --color-backdrop: #fff8dd;
+    --color-main: #91a4ff;
+    --color-accent: #ff879f;
+    --color-text-light: #fffcf6;
+    --color-text-dark: #161624;
+}
+
+body{
+    background-color: var(--color-backdrop);
+}
+
+header{
+    background-color: var(--color-main);
+    font-size: var(--size-h1);
+}
+
+h1{
+    color: var(--color-dark);
+    font-family: var(--font-h1);
+    font-size: var(--size-h1);
+    padding: var(--padding-heading);
+}
+
+h2{
+    padding: var(--padding-heading);
+    font-family: var(--font-heading);
 }
