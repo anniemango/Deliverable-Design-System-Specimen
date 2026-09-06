@@ -156,6 +156,28 @@ a:active {
   color: var(--color-text-dark);
 }
 
+.button--secondary {
+  background-color: transparent;
+  color: var(--color-link);
+  border: 2px solid var(--color-link);
+}
+
+.button--secondary:hover {
+  background-color: var(--color-link);
+  color: var(--color-text-light);
+}
+
+.button--secondary:focus-visible {
+  outline: 2px solid var(--color-text-dark);
+  outline-offset: 2px;
+}
+
+.button--secondary:active {
+  background-color: var(--color-text-dark);
+  border-color: var(--color-text-dark);
+  color: var(--color-text-light);
+}
+
 code {
   font-family: var(--font-mono);
   background-color: var(--color-main);
