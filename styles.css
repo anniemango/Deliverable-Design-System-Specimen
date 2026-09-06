@@ -263,3 +263,38 @@ code {
   outline: 2px solid var(--color-link);
   outline-offset: 2px;
 }
+
+.field--checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.field--checkbox label {
+  font-size: var(--base-size);
+  color: var(--color-text-dark);
+}
+
+.field--checkbox input[type="checkbox"] {
+  width: 1.1em;
+  height: 1.1em;
+  accent-color: var(--color-link);
+}
+
+.field--checkbox input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+.field--radio-group {
+  border: none;
+  padding: 0;
+  gap: var(--space-sm);
+}
+
+.field--radio-group legend {
+  font-size: var(--size-data);
+  color: var(--color-text-data);
+  padding: 0;
+  margin-bottom: var(--space-xs);
+}
