@@ -10,6 +10,7 @@
   margin: 0;
 }
 
+ /* font and color set to inherit on button, input, select and textarea. */
 button,
 input,
 select,
@@ -169,6 +170,7 @@ a:active {
 .button {
   display: inline-block;
   padding: var(--space-sm) var(--space-lg);
+  margin: var(--space-sm);
   border: 0;
   border-radius: var(--radius-md);
   font-weight: bold;
