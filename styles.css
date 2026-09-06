@@ -217,3 +217,11 @@ code {
 .notice p {
   padding: 0;
 }
+
+.media-placeholder {
+  background-color: var(--color-backdrop);
+  border: 1px dashed var(--color-text-data);
+  border-radius: var(--radius-sm);
+  aspect-ratio: 16 / 9;
+  margin-bottom: var(--space-md);
+}
