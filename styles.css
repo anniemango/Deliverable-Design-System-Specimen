@@ -225,3 +225,28 @@ code {
   aspect-ratio: 16 / 9;
   margin-bottom: var(--space-md);
 }
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+  max-width: 20rem;
+}
+
+.field label {
+  font-size: var(--size-data);
+  color: var(--color-text-data);
+}
+
+.field input[type="text"] {
+  padding: var(--space-sm);
+  border: 1px solid var(--color-text-data);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-text-light);
+}
+
+.field input[type="text"]:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
