@@ -11,17 +11,20 @@
 }
 
 :root{
-    --font-body: "helvetica", sans-serif;
-    --font-h1: "tomarik-serif", serif;
-    --font-heading: "tomarik-introvert", sans-serif;
+    /* typography */
+    /* Font source: Adobe Fonts (Typekit)
+   Fonts: tomarik-serif, tomarik-introvert.
+   Licensed for web publishing (personal and commercial use)under the Adobe subscription.
+   --font-body uses a system font stack, requiring no license. */
+    --font-body: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    --font-display: "tomarik-serif", Georgia, "Times New Roman", serif;
+    --font-heading: "tomarik-introvert", -apple-system, "Segoe UI", Roboto, sans-serif;
     --base-size: 1rem;
     --line-height: 1.5;
-    --measure: 65ch;
-
+    --measure: clamp(45ch. 60vw, 90ch);
     --size-h1: 3rem;
     --size-h2: 2rem;
     --size-h3: 1.8rem;
-    --padding: 1rem 2rem;
 
     /* colors */
     --color-backdrop: #fff8dd;
@@ -29,7 +32,28 @@
     --color-accent: #ff879f;
     --color-text-light: #fffcf6;
     --color-text-dark: #161624;
+
+    /* spacing scale */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+    --space-padded: 1rem 2rem;
+
+    /* radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-full: 999px;
+
+    /* elevation */
+    --elevation-low: 0 1px 2px #00000014;
+    --elevation-high: 0 4px 12px #0000001f;
 } 
+
+html{
+    line-height: var(--line-height);
+}
 
 body{
     background-color: var(--color-backdrop);
@@ -43,13 +67,13 @@ header{
 
 h1{
     color: var(--color-text-dark);
-    font-family: var(--font-h1);
+    font-family: var(--font-display);
     font-size: var(--size-h1);
-    padding: var(--padding);
+    padding: var(--space-padded);
 }
 
 h2{
-    padding: var(--padding);
+    padding: var(--space-padded);
     font-family: var(--font-heading);
     font-size: var(--size-h2);
 }
@@ -57,10 +81,12 @@ h2{
 h3{
     font-family: var(--font-heading);
     font-size: var(--size-h3);
-    padding: var(--padding);
+    padding: var(--space-padded);
 }
 
 p{
-    padding: var(--padding);
+    padding: var(--space-padded);
     padding-top: 0;
+    max-width: var(--measure);
 }
+
