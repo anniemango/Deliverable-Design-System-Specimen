@@ -1,92 +1,104 @@
 /* included to make width and height calculations predictable across all elements*/
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
+*::after {
+  box-sizing: border-box;
 }
 
 /* unify browser default margins to mitigate different margins for headings, paragraphs assigned by browsers. The margins will be defined by author styles instead. */
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
-:root{
-    /* typography */
-    /* Font source: Adobe Fonts (Typekit)
+:root {
+  /* typography */
+  /* Font source: Adobe Fonts (Typekit)
    Fonts: tomarik-serif, tomarik-introvert.
    Licensed for web publishing (personal and commercial use)under the Adobe subscription.
    --font-body uses a system font stack, requiring no license. */
-    --font-body: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
-    --font-display: "tomarik-serif", Georgia, "Times New Roman", serif;
-    --font-heading: "tomarik-introvert", -apple-system, "Segoe UI", Roboto, sans-serif;
-    --base-size: 1rem;
-    --line-height: 1.5;
-    --measure: clamp(45ch. 60vw, 90ch);
-    --size-h1: 3rem;
-    --size-h2: 2rem;
-    --size-h3: 1.8rem;
+  --font-body: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "tomarik-serif", Georgia, "Times New Roman", serif;
+  --font-heading: "tomarik-introvert", -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+  --base-size: 1rem;
+  --line-height: 1.5;
+  --measure: clamp(45ch. 60vw, 90ch);
+  --size-h1: 3rem;
+  --size-h2: 2rem;
+  --size-h3: 1.8rem;
+  --size-data: 0.8rem;
 
-    /* colors */
-    --color-backdrop: #fff8dd;
-    --color-main: #f8c36c;
-    --color-accent: #ff879f;
-    --color-text-light: #fffcf6;
-    --color-text-dark: #161624;
+  /* colors */
+  --color-backdrop: #fff8dd;
+  --color-main: #f8c36c;
+  --color-accent: #ff879f;
+  --color-text-light: #fffcf6;
+  --color-text-dark: #161624;
+  --color-text-data: #6b6b7a;
+  --color-link: #b5335f;
 
-    /* spacing scale */
-    --space-xs: 0.25rem;
-    --space-sm: 0.5rem;
-    --space-md: 1rem;
-    --space-lg: 2rem;
-    --space-xl: 4rem;
-    --space-padded: 1rem 2rem;
+  /* spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-padded: 1rem 2rem;
 
-    /* radius */
-    --radius-sm: 0.25rem;
-    --radius-md: 0.5rem;
-    --radius-full: 999px;
+  /* radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-full: 999px;
 
-    /* elevation */
-    --elevation-low: 0 1px 2px #00000014;
-    --elevation-high: 0 4px 12px #0000001f;
-} 
-
-html{
-    line-height: var(--line-height);
+  /* elevation */
+  --elevation-low: 0 1px 2px #00000014;
+  --elevation-high: 0 4px 12px #0000001f;
 }
 
-body{
-    background-color: var(--color-backdrop);
-    font-family: var(--font-body);
+html {
+  line-height: var(--line-height);
 }
 
-header{
-    background-color: var(--color-main);
-    font-size: var(--size-h1);
+body {
+  background-color: var(--color-backdrop);
+  font-family: var(--font-body);
 }
 
-h1{
-    color: var(--color-text-dark);
-    font-family: var(--font-display);
-    font-size: var(--size-h1);
-    padding: var(--space-padded);
+header {
+  background-color: var(--color-main);
+  font-size: var(--size-h1);
 }
 
-h2{
-    padding: var(--space-padded);
-    font-family: var(--font-heading);
-    font-size: var(--size-h2);
+h1 {
+  color: var(--color-text-dark);
+  font-family: var(--font-display);
+  font-size: var(--size-h1);
+  padding: var(--space-padded);
 }
 
-h3{
-    font-family: var(--font-heading);
-    font-size: var(--size-h3);
-    padding: var(--space-padded);
+h2 {
+  padding: var(--space-padded);
+  font-family: var(--font-heading);
+  font-size: var(--size-h2);
 }
 
-p{
-    padding: var(--space-padded);
-    padding-top: 0;
-    max-width: var(--measure);
+h3 {
+  font-family: var(--font-heading);
+  font-size: var(--size-h3);
+  padding: var(--space-padded);
 }
 
+.meta {
+  color: var(--color-text-data);
+  font-size: var(--size-data);
+}
+
+p {
+  padding: var(--space-padded);
+  padding-top: 0;
+  max-width: var(--measure);
+}
+
+a {
+    color: var(--color-link);
+}
