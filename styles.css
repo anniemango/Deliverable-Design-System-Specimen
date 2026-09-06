@@ -10,6 +10,14 @@
   margin: 0;
 }
 
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
 :root {
   /* typography */
   /* Font source: Adobe Fonts (Typekit)
@@ -146,33 +154,33 @@ a:active {
   color: var(--color-text-light);
 }
 
-.button--primary:focus-visible {
+.button-primary:focus-visible {
   outline: 2px solid var(--color-text-dark);
   outline-offset: 2px;
 }
 
-.button--primary:active {
+.button-primary:active {
   background-color: var(--color-accent);
   color: var(--color-text-dark);
 }
 
-.button--secondary {
+.button-secondary {
   background-color: transparent;
   color: var(--color-link);
   border: 2px solid var(--color-link);
 }
 
-.button--secondary:hover {
+.button-secondary:hover {
   background-color: var(--color-link);
   color: var(--color-text-light);
 }
 
-.button--secondary:focus-visible {
+.button-secondary:focus-visible {
   outline: 2px solid var(--color-text-dark);
   outline-offset: 2px;
 }
 
-.button--secondary:active {
+.button-secondary:active {
   background-color: var(--color-text-dark);
   border-color: var(--color-text-dark);
   color: var(--color-text-light);
