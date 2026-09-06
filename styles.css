@@ -122,6 +122,39 @@ p {
 a {
   color: var(--color-link);
 }
+a:hover {
+  color: var(--color-main);
+}
+a:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+a:active {
+  color: var(--color-accent);
+}
+
+.button {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-md);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button-primary {
+  background-color: var(--color-link);
+  color: var(--color-text-light);
+}
+
+.button--primary:focus-visible {
+  outline: 2px solid var(--color-text-dark);
+  outline-offset: 2px;
+}
+
+.button--primary:active {
+  background-color: var(--color-accent);
+  color: var(--color-text-dark);
+}
 
 code {
   font-family: var(--font-mono);
