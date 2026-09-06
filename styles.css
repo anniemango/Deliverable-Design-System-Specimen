@@ -20,9 +20,13 @@
   --font-display: "tomarik-serif", Georgia, "Times New Roman", serif;
   --font-heading: "tomarik-introvert", -apple-system, "Segoe UI", Roboto,
     sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
   --base-size: 1rem;
   --line-height: 1.5;
-  --measure: clamp(45ch. 60vw, 90ch);
+  --measure: clamp(45ch, 60vw, 90ch);
+
+  /* font sizing */
+  --size-promo: 0.9em;
   --size-h1: 3rem;
   --size-h2: 2rem;
   --size-h3: 1.8rem;
@@ -100,5 +104,13 @@ p {
 }
 
 a {
-    color: var(--color-link);
+  color: var(--color-link);
+}
+
+code {
+  font-family: var(--font-mono);
+  background-color: var(--color-main);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+  font-size: var(--size-promo);
 }
