@@ -48,12 +48,16 @@ textarea {
   --color-text-dark: #161624;
   --color-text-data: #6b6b7a;
   --color-link: #b5335f;
+  --color-link-hover: #872647;
+  --color-link-active: #5f1b32;
 
   /* semantic theme roles */
   --color-surface: #fffcf6;
   --color-border: #6b6b7a;
-  --color-action: #fe0558;
-  --color-link: #b5335f;
+  --color-action: #d50148;
+  --color-action-hover: #ad013a;
+  --color-action-text: #d50148;
+  --color-on-accent: #161624;
   --color-focus: #b5335f;
 
   /* spacing scale */
@@ -62,7 +66,8 @@ textarea {
   --space-md: 1rem;
   --space-lg: 2rem;
   --space-xl: 4rem;
-  --space-padded: 1rem 2rem;
+  --space-padded: var(--space-md) var(--space-md);
+  --gutter: var(--space-md);
 
   /* radius */
   --radius-sm: 0.25rem;
@@ -79,6 +84,8 @@ textarea {
     --size-h1: 2.5rem;
     --size-h2: 1.75rem;
     --size-h3: 1.5rem;
+    --space-padded: var(--space-md) var(--space-lg);
+    --gutter: var(--space-lg);
   }
 }
 
@@ -87,6 +94,7 @@ textarea {
     --size-h1: 3rem;
     --size-h2: 2rem;
     --size-h3: 1.8rem;
+    --gutter: var(--space-xl);
   }
 }
 
@@ -106,7 +114,7 @@ body {
 }
 
 main {
-  padding: var(--space-md) var(--space-xl);
+  padding: var(--space-md) var(--gutter);
 }
 
 header {
@@ -148,14 +156,14 @@ a {
   color: var(--color-link);
 }
 a:hover {
-  color: var(--color-main);
+  color: var(--color-link-hover);
 }
 a:focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
 a:active {
-  color: var(--color-accent);
+  color: var(--color-link-active);
 }
 
 .button {
@@ -171,6 +179,10 @@ a:active {
   color: var(--color-text-light);
 }
 
+.button--primary:hover {
+  background-color: var(--color-action-hover);
+}
+
 .button--primary:focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
@@ -178,13 +190,13 @@ a:active {
 
 .button--primary:active {
   background-color: var(--color-accent);
-  color: var(--color-text-dark);
+  color: var(--color-on-accent);
 }
 
 .button--secondary {
   background-color: transparent;
-  color: var(--color-action);
-  border: 2px solid var(--color-action);
+  color: var(--color-action-text);
+  border: 2px solid var(--color-action-text);
 }
 
 .button--secondary:hover {
@@ -200,7 +212,7 @@ a:active {
 .button--secondary:active {
   background-color: var(--color-text-dark);
   border-color: var(--color-text-dark);
-  color: var(--color-text-light);
+  color: var(--color-surface);
 }
 
 .is-disabled {
@@ -328,8 +340,14 @@ code {
   --color-surface: #26242f;
   --color-text-dark: #ffffff;
   --color-border: #8b899a;
+  --color-main: #3a3446;
+  --color-text-data: #a9a7b8;
   --color-action: #c5244c;
+  --color-action-hover: #d82753;
+  --color-action-text: #ff6f91;
   --color-link: #ff6f91;
+  --color-link-hover: #ff94ad;
+  --color-link-active: #ffbdcc;
   --color-focus: #ffd166;
 
   display: block;
