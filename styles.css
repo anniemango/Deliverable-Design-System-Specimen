@@ -1,6 +1,13 @@
-*{
+/* included to make width and height calculations predictable across all elements*/
+*,
+*::before,
+*::after{
     box-sizing: border-box;
-    margin: 0 auto;
+}
+
+/* unify browser default margins to mitigate different margins for headings, paragraphs assigned by browsers. The margins will be defined by author styles instead. */
+*{
+    margin: 0;
 }
 
 :root{
@@ -35,7 +42,7 @@ header{
 }
 
 h1{
-    color: var(--color-dark);
+    color: var(--color-text-dark);
     font-family: var(--font-h1);
     font-size: var(--size-h1);
     padding: var(--padding);
