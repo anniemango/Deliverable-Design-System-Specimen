@@ -27,9 +27,9 @@
 
   /* font sizing */
   --size-promo: 0.9em;
-  --size-h1: 3rem;
-  --size-h2: 2rem;
-  --size-h3: 1.8rem;
+  --size-h1: 2rem;
+  --size-h2: 1.5rem;
+  --size-h3: 1.25rem;
   --size-data: 0.8rem;
 
   /* colors */
@@ -57,6 +57,22 @@
   /* elevation */
   --elevation-low: 0 1px 2px #00000014;
   --elevation-high: 0 4px 12px #0000001f;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --size-h1: 2.5rem;
+    --size-h2: 1.75rem;
+    --size-h3: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --size-h1: 3rem;
+    --size-h2: 2rem;
+    --size-h3: 1.8rem;
+  }
 }
 
 html {
