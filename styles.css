@@ -52,7 +52,8 @@ textarea {
   /* semantic theme roles */
   --color-surface: #fffcf6;
   --color-border: #6b6b7a;
-  --color-action: #b5335f;
+  --color-action: #fe0558;
+  --color-link: #b5335f;
   --color-focus: #b5335f;
 
   /* spacing scale */
@@ -144,7 +145,7 @@ p {
 }
 
 a {
-  color: var(--color-action);
+  color: var(--color-link);
 }
 a:hover {
   color: var(--color-main);
@@ -325,9 +326,10 @@ code {
 .alt-theme {
   --color-backdrop: #1b1a24;
   --color-surface: #26242f;
-  --color-text-dark: #f5f3f8;
+  --color-text-dark: #ffffff;
   --color-border: #8b899a;
-  --color-action: #ff9ab3;
+  --color-action: #c5244c;
+  --color-link: #ff6f91;
   --color-focus: #ffd166;
 
   display: block;
