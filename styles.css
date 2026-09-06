@@ -243,6 +243,22 @@ code {
   margin-bottom: var(--space-sm);
 }
 
+.card p {
+  padding: 0;
+}
+
+.card--elevated {
+  box-shadow: var(--elevation-high);
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  padding: 0 var(--space-md) var(--space-md);
+}
+
 .notice {
   background-color: var(--color-main);
   border-left: 4px solid var(--color-action);
